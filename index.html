@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32X32" href="./imagens/icone.webp">
+    <title>RECOMENDAÇÕES DE LIVROS</title>
+    <link rel="stylesheet" href="./libs/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <a  href="#inicio"><img id="imglog" src="/imagens/icone.webp" alt=""></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end w-100" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link active">Ínicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#livros" class="nav-link">Livros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio" class="p-0">
+            <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img src="imagens/duna_slite.webp" alt="Duna" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h2>DUNA</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="imagens/fundation_slite.webp" alt="Fundação" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h2>Fundação</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="imagens/neurimance_slite.jpg" alt="Neuromancer" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h2>Neuromancer</h2>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="livros">
+            <h2>Livros Recomendados de Ficção Científica</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card">
+                        <img src="./imagens/duna_card.jpeg" class="card-img-top" alt="Duna">
+                        <div class="card-body">
+                            <h5 class="card-title">Duna</h5>
+                            <p class="card-text">"Duna" é um clássico da ficção científica que se passa em um futuro distante onde o universo é governado por poderosas famílias feudais. A história segue o jovem Paul Atreides em sua jornada para se tornar o líder de um povo nativo em um planeta deserto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./imagens/fundation_card.jpeg" class="card-img-top" alt="Fundação">
+                        <div class="card-body">
+                            <h5 class="card-title">Fundação</h5>
+                            <p class="card-text">"Fundação" é o primeiro livro da trilogia clássica de Isaac Asimov que conta a história da queda de um império galáctico e dos esforços para preservar o conhecimento humano através da criação de uma fundação.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./imagens/neuromancer_card.jpeg" class="card-img-top" alt="Neuromancer">
+                        <div class="card-body">
+                            <h5 class="card-title">Neuromancer</h5>
+                            <p class="card-text">"Neuromancer" é um romance cyberpunk que segue o hacker Case enquanto ele é recrutado para uma missão perigosa que o leva ao submundo da cibernética e da inteligência artificial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h2>Sobre os Livros Recomendados</h2>
+                <p>Este é um projeto desenvolvido como parte do curso de <a href="https://ebaconline.com.br/full-stack-python">Desenvolvedor Full Stack Python da EBAC</a>.</p>
+                <p>O objetivo é Criar um projeto utilizando o Bootstrap que contenha os elementos:</p>
+                <ul>
+                    <li>Carousel de imagens</li>
+                    <li>Um layout com grid, onde na visão desktop teremos 3 itens por linha, no tablet 2 itens por linha e no smartphone 1 item por linha</li>
+                    <li>Inserir um card dentro das colunas, o conteúdo do card fica a seu critério</li>
+                    <li>Publique o projeto na Vercel</li>
+                </ul>
+            </div>
+            <p>Acesse o repositório do projeto <a href="https://github.com/TalisonAmorim" target="_blank">aqui</a></p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="row">
+                <div class="col-lg-6 col-sm-8">
+                    <form class="mt-5">
+                        <div class="mb-2">
+                            <label for="nome" class="form-label">Seu nome:</label>
+                            <input type="text" class="form-control" id="nome">
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Seu email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-2">
+                            <label for="telefone" class="form-label">Seu telefone:</label>
+                            <input type="tel" class="form-control" id="telefone">
+                        </div>
+                        <div class="mb-2">
+                            <label for="mensagem" class="form-label">Sua mensagem:</label>
+                            <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="mt-2">
+        <div class="container">
+            <p>&copy; 2024 - Desenvolvido por <a href="#">TALISON AMORIM</a>.</p>
+        </div>
+    </footer>
+
+    <script src="./libs/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
