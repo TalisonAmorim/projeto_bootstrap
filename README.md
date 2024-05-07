@@ -32,4 +32,4 @@ A entrega deste exercício consiste em:
 
 ## Visualização do Projeto
 
-O projeto pode ser visualizado [aqui]().
+O projeto pode ser visualizado [aqui](https://projeto-bootstrap-mu.vercel.app/).
